@@ -9,10 +9,11 @@
 <script>
     var now = new Date();
     var dayOfWeek = now.getDay(); // Sunday - Saturday : 0 - 6
+    document.write (now + <"hr">);
     document.write(dayOfWeek+"<hr>");
     
-    if(dayOfWeek == 5) {
-        document.write("Have a nice weekend!");
+    if(dayOfWeek == 0 || dayOfWeek == 6) {
+        document.write("this is weekend!");
     }
     </script>
     <p><strong>Note:</strong> This example will print "Have a nice weekend!" if the current day is Friday.</p>
